@@ -1,0 +1,13 @@
+<div class="vending-machine">
+  <h1>Vending Machine</h1>
+  <div class="actions">
+    <button (click)="insertQuarter()">Insert Quarter</button>
+    <button (click)="ejectQuarter()">Eject Quarter</button>
+    <button (click)="pushSodaButton()">Push Soda Button</button>
+    <button (click)="dispenseSoda()">Dispense Soda</button>
+  </div>
+  <div class="info">
+    <p *ngIf="message">Message: {{message}}</p>
+    <p>Sodas remaining: {{sodasRemaining}}</p>
+  </div>
+</div>
